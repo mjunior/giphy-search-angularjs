@@ -4,8 +4,7 @@ import { GiphySearchService } from 'app/giphy/giphy-search.service';
 
 @Component({
   selector: 'app-giphy-search-manual',
-  templateUrl: './giphy-search-manual.component.html',
-  styleUrls: ['./giphy-search-manual.component.css']
+  templateUrl: './giphy-search-manual.component.html'
 })
 export class GiphySearchManualComponent implements OnInit {
   gifs: any[] = []

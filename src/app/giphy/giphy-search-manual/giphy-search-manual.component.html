@@ -4,8 +4,5 @@
   <input type="submit" value="Pesquisars" (click)="searchGif()">
 </p>
 
-<hr>
+<app-giphy-search-list [gifsList]="gifs"></app-giphy-search-list>
 
-<a *ngFor="let gif of gifs" href="{{gif.bitly_url}}">
-  <img src="http://i.giphy.com/{{gif.id}}.gif" alt="">
-</a>
