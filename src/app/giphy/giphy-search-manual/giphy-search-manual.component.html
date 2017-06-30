@@ -1,0 +1,11 @@
+<p>
+  Limit: <input type="number" [(ngModel)]="limit">
+  Busca: <input type="text" [(ngModel)]="term">
+  <input type="submit" value="Pesquisars" (click)="searchGif()">
+</p>
+
+<hr>
+
+<a *ngFor="let gif of gifs" href="{{gif.bitly_url}}">
+  <img src="http://i.giphy.com/{{gif.id}}.gif" alt="">
+</a>
