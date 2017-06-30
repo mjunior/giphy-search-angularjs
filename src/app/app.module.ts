@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GiphySearchManualModule } from 'app/giphy/giphy-search-manual/giphy-search-manual.module';
+import { AppRoutingModule } from 'app/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GiphySearchManualModule } from 'app/giphy/giphy-search-manual/giphy-sea
     BrowserModule,
     FormsModule,
     HttpModule,
-    GiphySearchManualModule
+    GiphySearchManualModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
